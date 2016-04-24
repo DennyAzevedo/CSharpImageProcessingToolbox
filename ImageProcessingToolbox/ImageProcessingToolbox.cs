@@ -62,10 +62,10 @@ namespace PictureViewer
             //grayImage._SmoothGaussian(5);
             inputImage._SmoothGaussian(25);
             //pictureBox1.Image = grayImage.ToBitmap();
-            pictureBox1.Image = inputImage.ToBitmap();
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.Image = inputImage.ToBitmap();
 
         }
-
         
     }
 }
