@@ -14,6 +14,10 @@ namespace PictureViewer
 {
     public partial class ImageProcessingToolbox : Form
     {
+        int gaussKernel;
+        
+           
+
         public ImageProcessingToolbox()
         {
             InitializeComponent();
@@ -43,6 +47,7 @@ namespace PictureViewer
                 
         private void Form1_Load(object sender, EventArgs e)
         {
+            gaussKernel = 5;
 
         }
 
@@ -52,20 +57,47 @@ namespace PictureViewer
             pictureBox1.Refresh();
         }
 
-        private void executeFilterButton_Click(object sender, EventArgs e)
+        private void runFilter2Button_Click(object sender, EventArgs e)
         {
-            //Emgu.CV.Image<Hls, Byte> imageHsi = new Image<Hls, Byte>(pictureBox1.Image.Bitmap);
             Bitmap pBoxImage = new Bitmap(pictureBox1.Image);
             Image<Bgr, byte> inputImage = new Image<Bgr, Byte>(pBoxImage);
-            
+
             //Image<Gray, byte> grayImage = inputImage.Convert<Gray, byte>();
-            //grayImage._SmoothGaussian(5);
-            inputImage._SmoothGaussian(25);
-            //pictureBox1.Image = grayImage.ToBitmap();
+            
+            // Kernel must be an odd number
+            if (gaussKernel%2 == 0)
+            {
+                gaussKernel--;
+                textBox1.Text = gaussKernel.ToString();
+            }
+
+            inputImage._SmoothGaussian(gaussKernel);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.Image = inputImage.ToBitmap();
 
         }
-        
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            int tryParseResult;
+            if (int.TryParse(textBox1.Text, out tryParseResult))
+            {
+                gaussKernel = tryParseResult;
+            }
+            else
+            {
+                MessageBox.Show("Invalid Input");
+            }
+        }
+
+        private void runFilter3Button_Click(object sender, EventArgs e)
+        {
+            Bitmap pBoxImage = new Bitmap(pictureBox1.Image);
+            Image<Bgr, byte> inputImage = new Image<Bgr, Byte>(pBoxImage);
+            inputImage._EqualizeHist();
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.Image = inputImage.ToBitmap();
+
+        }
     }
 }
