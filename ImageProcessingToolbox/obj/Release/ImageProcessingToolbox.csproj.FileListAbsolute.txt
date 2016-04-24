@@ -1,0 +1,10 @@
+C:\Users\danielo\Dropbox\Programming\C#\ImageProcessingToolbox\ImageProcessingToolbox\bin\Release\PictureViewer.exe.config
+C:\Users\danielo\Dropbox\Programming\C#\ImageProcessingToolbox\ImageProcessingToolbox\bin\Release\PictureViewer.exe
+C:\Users\danielo\Dropbox\Programming\C#\ImageProcessingToolbox\ImageProcessingToolbox\bin\Release\PictureViewer.pdb
+C:\Users\danielo\Dropbox\Programming\C#\ImageProcessingToolbox\ImageProcessingToolbox\bin\Release\Emgu.CV.UI.dll
+C:\Users\danielo\Dropbox\Programming\C#\ImageProcessingToolbox\ImageProcessingToolbox\bin\Release\Emgu.CV.World.dll
+C:\Users\danielo\Dropbox\Programming\C#\ImageProcessingToolbox\ImageProcessingToolbox\obj\Release\PictureViewer.ImageProcessingToolbox.resources
+C:\Users\danielo\Dropbox\Programming\C#\ImageProcessingToolbox\ImageProcessingToolbox\obj\Release\PictureViewer.Properties.Resources.resources
+C:\Users\danielo\Dropbox\Programming\C#\ImageProcessingToolbox\ImageProcessingToolbox\obj\Release\ImageProcessingToolbox.csproj.GenerateResource.Cache
+C:\Users\danielo\Dropbox\Programming\C#\ImageProcessingToolbox\ImageProcessingToolbox\obj\Release\PictureViewer.exe
+C:\Users\danielo\Dropbox\Programming\C#\ImageProcessingToolbox\ImageProcessingToolbox\obj\Release\PictureViewer.pdb

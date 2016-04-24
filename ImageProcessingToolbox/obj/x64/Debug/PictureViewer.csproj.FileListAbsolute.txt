@@ -1,0 +1,10 @@
+C:\Users\danielo\Dropbox\Programming\C#\SimplePictureViewerDotNet\PictureViewer\bin\x64\Debug\PictureViewer.exe.config
+C:\Users\danielo\Dropbox\Programming\C#\SimplePictureViewerDotNet\PictureViewer\bin\x64\Debug\PictureViewer.exe
+C:\Users\danielo\Dropbox\Programming\C#\SimplePictureViewerDotNet\PictureViewer\bin\x64\Debug\PictureViewer.pdb
+C:\Users\danielo\Dropbox\Programming\C#\SimplePictureViewerDotNet\PictureViewer\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\danielo\Dropbox\Programming\C#\SimplePictureViewerDotNet\PictureViewer\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\danielo\Dropbox\Programming\C#\SimplePictureViewerDotNet\PictureViewer\obj\x64\Debug\PictureViewer.Form1.resources
+C:\Users\danielo\Dropbox\Programming\C#\SimplePictureViewerDotNet\PictureViewer\obj\x64\Debug\PictureViewer.Properties.Resources.resources
+C:\Users\danielo\Dropbox\Programming\C#\SimplePictureViewerDotNet\PictureViewer\obj\x64\Debug\PictureViewer.csproj.GenerateResource.Cache
+C:\Users\danielo\Dropbox\Programming\C#\SimplePictureViewerDotNet\PictureViewer\obj\x64\Debug\PictureViewer.exe
+C:\Users\danielo\Dropbox\Programming\C#\SimplePictureViewerDotNet\PictureViewer\obj\x64\Debug\PictureViewer.pdb
