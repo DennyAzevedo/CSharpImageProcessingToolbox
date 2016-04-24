@@ -26,6 +26,7 @@ namespace PictureViewer
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 pictureBox1.Load(openFileDialog1.FileName);
+                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             }
         }
 
@@ -39,19 +40,7 @@ namespace PictureViewer
         {
             this.Close();
         }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox1.Checked)
-            {
-                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            }
-            else
-            {
-                pictureBox1.SizeMode = PictureBoxSizeMode.Normal;
-            }
-        }
-
+                
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -68,6 +57,7 @@ namespace PictureViewer
             //Emgu.CV.Image<Hls, Byte> imageHsi = new Image<Hls, Byte>(pictureBox1.Image.Bitmap);
             Bitmap pBoxImage = new Bitmap(pictureBox1.Image);
             Image<Bgr, byte> inputImage = new Image<Bgr, Byte>(pBoxImage);
+            
             //Image<Gray, byte> grayImage = inputImage.Convert<Gray, byte>();
             //grayImage._SmoothGaussian(5);
             inputImage._SmoothGaussian(25);
