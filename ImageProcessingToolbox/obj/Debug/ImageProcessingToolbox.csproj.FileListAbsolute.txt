@@ -8,3 +8,14 @@ C:\Users\danielo\Dropbox\Programming\C#\ImageProcessingToolbox\ImageProcessingTo
 C:\Users\danielo\Dropbox\Programming\C#\ImageProcessingToolbox\ImageProcessingToolbox\obj\Debug\PictureViewer.Properties.Resources.resources
 C:\Users\danielo\Dropbox\Programming\C#\ImageProcessingToolbox\ImageProcessingToolbox\obj\Debug\ImageProcessingToolbox.csproj.GenerateResource.Cache
 C:\Users\danielo\Dropbox\Programming\C#\ImageProcessingToolbox\ImageProcessingToolbox\obj\Debug\PictureViewer.ImageProcessingToolbox.resources
+C:\Users\danielo\Desktop\emguCVTesting\ImageProcessingToolbox\ImageProcessingToolbox\bin\Debug\PictureViewer.exe.config
+C:\Users\danielo\Desktop\emguCVTesting\ImageProcessingToolbox\ImageProcessingToolbox\obj\Debug\PictureViewer.exe
+C:\Users\danielo\Desktop\emguCVTesting\ImageProcessingToolbox\ImageProcessingToolbox\obj\Debug\PictureViewer.pdb
+C:\Users\danielo\Desktop\emguCVTesting\ImageProcessingToolbox\ImageProcessingToolbox\bin\Debug\PictureViewer.exe
+C:\Users\danielo\Desktop\emguCVTesting\ImageProcessingToolbox\ImageProcessingToolbox\bin\Debug\PictureViewer.pdb
+C:\Users\danielo\Desktop\emguCVTesting\ImageProcessingToolbox\ImageProcessingToolbox\bin\Debug\Emgu.CV.UI.dll
+C:\Users\danielo\Desktop\emguCVTesting\ImageProcessingToolbox\ImageProcessingToolbox\bin\Debug\Emgu.CV.World.dll
+C:\Users\danielo\Desktop\emguCVTesting\ImageProcessingToolbox\ImageProcessingToolbox\obj\Debug\ImageProcessingToolbox.csprojResolveAssemblyReference.cache
+C:\Users\danielo\Desktop\emguCVTesting\ImageProcessingToolbox\ImageProcessingToolbox\obj\Debug\PictureViewer.ImageProcessingToolbox.resources
+C:\Users\danielo\Desktop\emguCVTesting\ImageProcessingToolbox\ImageProcessingToolbox\obj\Debug\PictureViewer.Properties.Resources.resources
+C:\Users\danielo\Desktop\emguCVTesting\ImageProcessingToolbox\ImageProcessingToolbox\obj\Debug\ImageProcessingToolbox.csproj.GenerateResource.Cache

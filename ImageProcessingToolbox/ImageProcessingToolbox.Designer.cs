@@ -46,14 +46,21 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.runFilter3Button = new System.Windows.Forms.Button();
+            this.filtersPage = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.filterPictureBox = new System.Windows.Forms.PictureBox();
+            this.runFilterButton = new System.Windows.Forms.Button();
+            this.filterLabel1 = new System.Windows.Forms.Label();
+            this.filterTextBox1 = new System.Windows.Forms.TextBox();
+            this.filtersComboBox = new System.Windows.Forms.ComboBox();
             this.flowLayoutPanelBottom = new System.Windows.Forms.FlowLayoutPanel();
             this.closeButton = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.runFilter3Button = new System.Windows.Forms.Button();
             this.mainLayoutPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -64,9 +71,12 @@
             this.tab2LayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage3.SuspendLayout();
-            this.flowLayoutPanelBottom.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.filtersPage.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.filterPictureBox)).BeginInit();
+            this.flowLayoutPanelBottom.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainLayoutPanel1
@@ -91,6 +101,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.filtersPage);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(3, 3);
             this.tabControl1.Name = "tabControl1";
@@ -288,33 +299,6 @@
             this.tabPage3.Text = "HistEqual";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutPanelBottom
-            // 
-            this.flowLayoutPanelBottom.Controls.Add(this.closeButton);
-            this.flowLayoutPanelBottom.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanelBottom.Location = new System.Drawing.Point(3, 428);
-            this.flowLayoutPanelBottom.Name = "flowLayoutPanelBottom";
-            this.flowLayoutPanelBottom.Size = new System.Drawing.Size(837, 32);
-            this.flowLayoutPanelBottom.TabIndex = 2;
-            // 
-            // closeButton
-            // 
-            this.closeButton.AutoSize = true;
-            this.closeButton.Location = new System.Drawing.Point(3, 3);
-            this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(75, 23);
-            this.closeButton.TabIndex = 3;
-            this.closeButton.Text = "Close";
-            this.closeButton.UseVisualStyleBackColor = true;
-            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.Filter = "JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All file" +
-    "s (*.*)|*.*";
-            this.openFileDialog1.Title = "Select a picture";
-            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
@@ -365,6 +349,129 @@
             this.runFilter3Button.UseVisualStyleBackColor = true;
             this.runFilter3Button.Click += new System.EventHandler(this.runFilter3Button_Click);
             // 
+            // filtersPage
+            // 
+            this.filtersPage.Controls.Add(this.tableLayoutPanel2);
+            this.filtersPage.Location = new System.Drawing.Point(4, 22);
+            this.filtersPage.Name = "filtersPage";
+            this.filtersPage.Padding = new System.Windows.Forms.Padding(3);
+            this.filtersPage.Size = new System.Drawing.Size(829, 393);
+            this.filtersPage.TabIndex = 3;
+            this.filtersPage.Text = "Filters";
+            this.filtersPage.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82F));
+            this.tableLayoutPanel2.Controls.Add(this.filterPictureBox, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.runFilterButton, 0, 7);
+            this.tableLayoutPanel2.Controls.Add(this.filterLabel1, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.filterTextBox1, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.filtersComboBox, 0, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 8;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(823, 387);
+            this.tableLayoutPanel2.TabIndex = 3;
+            // 
+            // filterPictureBox
+            // 
+            this.filterPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.filterPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.filterPictureBox.Location = new System.Drawing.Point(150, 3);
+            this.filterPictureBox.Name = "filterPictureBox";
+            this.tableLayoutPanel2.SetRowSpan(this.filterPictureBox, 8);
+            this.filterPictureBox.Size = new System.Drawing.Size(670, 381);
+            this.filterPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.filterPictureBox.TabIndex = 0;
+            this.filterPictureBox.TabStop = false;
+            // 
+            // runFilterButton
+            // 
+            this.runFilterButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.runFilterButton.Location = new System.Drawing.Point(3, 350);
+            this.runFilterButton.Name = "runFilterButton";
+            this.runFilterButton.Size = new System.Drawing.Size(75, 23);
+            this.runFilterButton.TabIndex = 5;
+            this.runFilterButton.Text = "Run Filter";
+            this.runFilterButton.UseVisualStyleBackColor = true;
+            this.runFilterButton.Click += new System.EventHandler(this.runFilterButton_Click);
+            // 
+            // filterLabel1
+            // 
+            this.filterLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.filterLabel1.AutoSize = true;
+            this.filterLabel1.Location = new System.Drawing.Point(6, 110);
+            this.filterLabel1.Name = "filterLabel1";
+            this.filterLabel1.Padding = new System.Windows.Forms.Padding(3);
+            this.filterLabel1.Size = new System.Drawing.Size(69, 19);
+            this.filterLabel1.TabIndex = 6;
+            this.filterLabel1.Text = "Kernel Size:";
+            this.toolTip2.SetToolTip(this.filterLabel1, "Kernel must be an odd value");
+            // 
+            // filterTextBox1
+            // 
+            this.filterTextBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.filterTextBox1.Location = new System.Drawing.Point(97, 110);
+            this.filterTextBox1.Name = "filterTextBox1";
+            this.filterTextBox1.Size = new System.Drawing.Size(35, 20);
+            this.filterTextBox1.TabIndex = 7;
+            this.filterTextBox1.Text = "5";
+            this.toolTip2.SetToolTip(this.filterTextBox1, "Kernel must be an odd value");
+            // 
+            // filtersComboBox
+            // 
+            this.filtersComboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tableLayoutPanel2.SetColumnSpan(this.filtersComboBox, 2);
+            this.filtersComboBox.FormattingEnabled = true;
+            this.filtersComboBox.Location = new System.Drawing.Point(12, 13);
+            this.filtersComboBox.Name = "filtersComboBox";
+            this.filtersComboBox.Size = new System.Drawing.Size(123, 21);
+            this.filtersComboBox.TabIndex = 8;
+            // 
+            // flowLayoutPanelBottom
+            // 
+            this.flowLayoutPanelBottom.Controls.Add(this.closeButton);
+            this.flowLayoutPanelBottom.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanelBottom.Location = new System.Drawing.Point(3, 428);
+            this.flowLayoutPanelBottom.Name = "flowLayoutPanelBottom";
+            this.flowLayoutPanelBottom.Size = new System.Drawing.Size(837, 32);
+            this.flowLayoutPanelBottom.TabIndex = 2;
+            // 
+            // closeButton
+            // 
+            this.closeButton.AutoSize = true;
+            this.closeButton.Location = new System.Drawing.Point(3, 3);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(75, 23);
+            this.closeButton.TabIndex = 3;
+            this.closeButton.Text = "Close";
+            this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All file" +
+    "s (*.*)|*.*";
+            this.openFileDialog1.Title = "Select a picture";
+            // 
             // ImageProcessingToolbox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -387,11 +494,15 @@
             this.tab2LayoutPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage3.ResumeLayout(false);
-            this.flowLayoutPanelBottom.ResumeLayout(false);
-            this.flowLayoutPanelBottom.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.filtersPage.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.filterPictureBox)).EndInit();
+            this.flowLayoutPanelBottom.ResumeLayout(false);
+            this.flowLayoutPanelBottom.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -424,6 +535,13 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button runFilter3Button;
+        private System.Windows.Forms.TabPage filtersPage;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.PictureBox filterPictureBox;
+        private System.Windows.Forms.Button runFilterButton;
+        private System.Windows.Forms.Label filterLabel1;
+        private System.Windows.Forms.TextBox filterTextBox1;
+        private System.Windows.Forms.ComboBox filtersComboBox;
     }
 }
 
